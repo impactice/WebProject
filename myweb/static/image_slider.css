@@ -1,0 +1,38 @@
+.image-slider-container {
+    position: relative;
+    width: 100%; /* 슬라이더 너비 설정 */
+    max-width: 800px; /* 최대 너비 제한 (선택 사항) */
+    margin: 20px auto; /* 가운데 정렬 (선택 사항) */
+    overflow: hidden; /* 슬라이더 영역 벗어나는 이미지 숨김 */
+}
+
+.image-slider {
+    display: flex; /* 이미지를 가로로 배치 */
+    transition: transform 0.5s ease-in-out; /* 슬라이드 애니메이션 */
+}
+
+.image-slider img {
+    width: 100%; /* 각 이미지 너비를 컨테이너에 맞춤 */
+    height: auto;
+}
+
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10; /* 다른 요소 위에 표시 */
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
