@@ -1,0 +1,84 @@
+/* 기존 스타일 */
+/* ... */
+
+/* 추가: main-content-wrapper 스타일 */
+.main-content-wrapper {
+    display: flex; /* Flexbox 레이아웃 사용 */
+    align-items: flex-start; /* 세로 방향으로 상단 정렬 */
+    width: 100%; /* 전체 너비 사용 */
+    max-width: 1200px; /* 최대 너비 제한 (선택 사항) */
+    margin: 20px auto; /* 가운데 정렬 (선택 사항) */
+    padding: 0 20px; /* 좌우 패딩 (선택 사항) */
+    box-sizing: border-box; /* 패딩, 테두리가 너비에 포함되도록 */
+    border: 1px solid black; /* 확인용 테두리 (작업 후 제거) */
+}
+
+.left-space {
+    flex: 0 0 25%; /* 고정 너비 또는 비율 설정 */
+    border: 1px solid red; /* 확인용 테두리 (작업 후 제거) */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.image-slider-container {
+    flex: 1; /* 남은 공간 차지 */
+    position: relative;
+    max-width: 600px; /* 슬라이더 최대 너비 조절 */
+    margin: 0 20px; /* 좌우 마진으로 간격 조절 */
+    overflow: hidden;
+    border: 1px solid blue; /* 슬라이더 컨테이너 확인용 테두리 (작업 후 제거) */
+}
+
+.right-space {
+    flex: 0 0 25%; /* 고정 너비 또는 비율 설정 */
+    border: 1px solid green; /* 확인용 테두리 (작업 후 제거) */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* 추가: 게시판 미리보기 스타일 */
+.board-preview h2 {
+    margin-top: 0;
+    color: #007bff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.board-preview ul {
+    list-style: none;
+    padding: 0;
+}
+
+.board-preview li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.board-preview li:last-child {
+    border-bottom: none;
+}
+
+.board-preview li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.board-preview li a:hover {
+    color: #007bff;
+}
+
+.view-all-board {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.view-all-board:hover {
+    background-color: #e9ecef;
+}

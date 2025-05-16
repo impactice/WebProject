@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>회원 관리 및 문의 게시판</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='image_slider.css') }}">
+    <style>
+        /* style.css로 이동할 스타일 정의는 여기에서 제외 */
+    </style>
+</head>
+
+<body>
+    <div class="top-section">
+        <div class="top-section-text">
+            <h1>안녕하세요!</h1>
+            <p>회원 관리 및 문의 게시판 웹사이트입니다.</p>
+        </div>
+        <div class="top-section-links">
+            {% if current_user.is_authenticated %}
+            <a href="{{ url_for('board') }}">문의 게시판</a>
+            <a href="{{ url_for('logout') }}">로그아웃</a>
+            {% else %}
+            <a href="{{ url_for('register') }}">회원 가입</a>
+            <a href="{{ url_for('login') }}">로그인</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="main-content-wrapper">
+        <div class="left-space board-preview">
+            <h2>최근 게시글</h2>
+            <ul>
+                {% for post in recent_posts %}
+                <li><a href="{{ url_for('view_bulletin_post', post_id=post.id) }}">{{ post.title }}</a></li>
+                {% else %}
+                <li>최근 게시글이 없습니다.</li>
+                {% endfor %}
+            </ul>
+            <a href="{{ url_for('bulletin_board') }}" class="view-all-board">게시판 전체 보기</a>
+        </div>
+        <div class="image-slider-container">
+            <div class="image-slider">
+                <img src="{{ url_for('static', filename='images/school.png') }}" alt="학교 이미지 1">
+                <img src="{{ url_for('static', filename='images/map.png') }}" alt="학교 지도 실물물">
+                <img src="{{ url_for('static', filename='images/lib_in.png') }}" alt="부산 도시 이미지">
+            </div>
+            <button class="prev-button">&lt;</button>
+            <button class="next-button">&gt;</button>
+        </div>
+        <div class="right-space">
+        </div>
+    </div>
+
+    <div class="main-section" style="display:none;">
+    </div>
+
+    <script src="{{ url_for('static', filename='image_slider.js') }}"></script>
+</body>
+
+</html>
