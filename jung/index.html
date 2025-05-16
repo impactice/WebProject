@@ -1,0 +1,21 @@
+<body>
+    <div class="top-section">
+        <h1>안녕하세요!</h1>
+        <p>회원 관리 및 문의 게시판 웹사이트입니다.</p> 
+    </div>
+
+    <div class="main-section">
+        <div class="image-box">
+            <img src="{{ url_for('static', filename='images/school.png') }}" alt="학교 이미지 테스트">
+        </div>
+        <div class="link-box">
+            {% if current_user.is_authenticated %}
+                <a href="{{ url_for('board') }}">문의 게시판</a>
+                <a href="{{ url_for('logout') }}">로그아웃</a>
+            {% else %}
+                <a href="{{ url_for('register') }}">회원 가입</a>
+                <a href="{{ url_for('login') }}">로그인</a>
+            {% endif %}
+        </div>
+    </div>
+</body>
