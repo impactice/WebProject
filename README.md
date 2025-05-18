@@ -14,6 +14,8 @@ pip install Flask-SQLAlchemy
 pip install Flask-SQLAlchemy
 ```
 - 이거는 확인
+![image](https://github.com/user-attachments/assets/5b94866d-7c8f-4b1f-aaeb-31d2988bee04)
+
 ```
 pip show Flask-SQLAlchemy
 ```
