@@ -1,7 +1,7 @@
 # WebProject 
 
 
-
+## 웹 프로그래밍하다가 깔아야 되는 pip 
 - 이거는 Flask에 sql (오류 화면)
 ![image](https://github.com/user-attachments/assets/12afe5e6-a2d2-406f-a57e-b3d5cb77e895)
 ```
