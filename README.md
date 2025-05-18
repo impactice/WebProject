@@ -95,8 +95,11 @@ pip install Flask-Login
 pip show Flask-Login
 ```
 
+## 데이터베이스를 보게 하기 위한 앱
+![image](https://github.com/user-attachments/assets/b8ea30a7-75f6-4a67-a8b5-77ce5903f73d)
 
-
+- 이거는 SQLite를 안 깔을 때 보이는 거
+![image](https://github.com/user-attachments/assets/5e7db420-a2cf-44dd-a88c-f1ef43594dc8)
 
 
 
