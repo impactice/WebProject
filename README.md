@@ -101,5 +101,5 @@ pip show Flask-Login
 - 이거는 SQLite를 안 깔을 때 보이는 거
 ![image](https://github.com/user-attachments/assets/5e7db420-a2cf-44dd-a88c-f1ef43594dc8)
 
-
+<test> readme수정 <test>
 
