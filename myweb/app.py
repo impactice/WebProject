@@ -187,7 +187,16 @@ def view_bulletin_post(post_id):
 
 @app.route('/test')
 def test_image():
-    return render_template('test.html')
+    return render_template('test.html') 
+
+@app.route('/building/int:id') 
+def building_page(id): 
+    # id가 1~99 사이일 때만 처리 (필요시 예외 처리 가능) 
+    if not (1 <= id <= 99): 
+        return "존재하지 않는 건물입니다.", 404
+    
+    template_name = f'building/B{id:02d}.html'  # building/B01.html, B02.html
+    return render_template(template_name)
 
 with app.app_context():
     db.create_all()
