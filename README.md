@@ -1,5 +1,10 @@
 # WebProject 
 
+## 이거는 터미널에서 까는 것 그리고 python 다운 받는 거 포함 
+- 1. 파이썬을 설치한다
+![image](https://github.com/user-attachments/assets/0fcc364f-71fd-4854-b4cf-00055a0c482a)
+
+
 ## vscode로 까는 Flask (일단 임시)
 
 - 1번
