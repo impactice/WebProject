@@ -8,6 +8,8 @@
 pip install Flask-SQLAlchemy
 ```
 - 이거는 설치
+![image](https://github.com/user-attachments/assets/2692da16-4c1e-45f8-a348-151081531d1a)
+
 ```
 pip install Flask-SQLAlchemy
 ```
