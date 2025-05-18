@@ -4,6 +4,73 @@
 - 1. 파이썬을 설치한다
 ![image](https://github.com/user-attachments/assets/0fcc364f-71fd-4854-b4cf-00055a0c482a)
 
+- 2. 다운로드에 들어가면 
+![image](https://github.com/user-attachments/assets/0008980f-0a65-492b-b9a3-2e118d861aa2)
+
+- 이런 파일이 있다 이것을 클릭을 하면 
+![image](https://github.com/user-attachments/assets/4cee3f76-a67e-490e-91a2-6de79f2fa8b9)
+
+- 이런 화면이 뜬다 
+- 둘다 체크를 해준다 (PATH는 무조건)
+![image](https://github.com/user-attachments/assets/dc7e14ce-412b-4cf8-8815-9a3949ee2ad5)
+
+- 그리고 Install Now를 클릭을 해준다 
+![image](https://github.com/user-attachments/assets/0e93238b-a2e8-4ba6-9a5b-5ae3e002a4a4)
+
+- 3. WINDOW키와 R키를 누른 다음 cmd를 누른다
+![image](https://github.com/user-attachments/assets/0d415544-ad26-47e9-b832-1e88e6a5bc53)
+
+- 확인을 누르면 
+![image](https://github.com/user-attachments/assets/b8436623-6245-4f35-90b3-0f34ec1e8e25)
+
+- 터미널이 열린다 
+
+- 4. 터미널 
+- 파이썬이 설치 되었있는지 알아보기 위해 
+- python --version
+- 을 터미널에 입력을 한다 
+
+![image](https://github.com/user-attachments/assets/053e7a4b-3aea-4205-b198-2230c2fadb87)
+
+- 제대로 설치가 되었다 
+
+- 가상환경 설정 (선택사항이지만 권장됨 vscode로 할 거면 필요 없음)
+```
+python -m venv venv
+source venv/bin/activate       # macOS/Linux
+venv\Scripts\activate          # Windows
+```
+- 5. flask 설치 
+- 그 다음 flask를 설치를 하겠다
+- pip install flask를 터미널에 입력을 하면
+```
+pip install flask
+```
+![image](https://github.com/user-attachments/assets/6a3c714e-fc7a-45ff-a42e-66a62e1c98fa)
+
+- 설치 확인
+```
+python -m flask --version
+```
+![image](https://github.com/user-attachments/assets/bcfa65cd-4fb2-45f9-a550-3cfcff8a3986)
+
+- 만약 설치할 때 pip가 안 된다면(중요 이거 안 되면 다음 단계들 다 안됨)
+![image](https://github.com/user-attachments/assets/2bf4eb17-a923-4ea4-8b4f-b32af307c310)
+
+- 이렇게 뜬다면 
+- 이는 pip가 설치되어 있지 않거나, 시스템 환경 변수(PATH)에 등록되지 않았기 때문이다
+
+- 명령 프롬프트에서 다음 명령어 입력: 
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+```
+![image](https://github.com/user-attachments/assets/e91ec098-96ce-47de-b51a-86bfa38de6b0)
+```
+python get-pip.py
+```
+
+![image](https://github.com/user-attachments/assets/3a08be23-dcdb-4409-ac7a-e1a67193d7bc)
+
 
 ## vscode로 까는 Flask (일단 임시)
 
