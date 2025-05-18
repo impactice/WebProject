@@ -20,3 +20,24 @@ pip install Flask-SQLAlchemy
 pip show Flask-SQLAlchemy
 ```
 
+- Flask-Login을 설치
+![image](https://github.com/user-attachments/assets/e3b9ce4a-0bf9-4f84-946a-01c62f16e513)
+
+- 설치
+![image](https://github.com/user-attachments/assets/cd2db99a-58cd-4c3f-9eb5-eb9fd56ef5d3)
+
+```
+pip install Flask-Login
+```
+- 확인
+![image](https://github.com/user-attachments/assets/5f85fdfd-56ad-49c5-a432-42851716098e)
+
+```
+pip show Flask-Login
+```
+
+
+
+
+
+
