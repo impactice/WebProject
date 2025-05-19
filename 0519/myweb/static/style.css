@@ -131,4 +131,29 @@ a:hover {
     color: #66c0f4;
 }
 
-/* 추가 스타일 (필요에 따라) */
+/* 추가: 문의 게시판 링크 스타일 (기존 링크와 동일하게) */
+.user-auth a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.user-auth a:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* 또는, 약간 다른 스타일을 적용하려면: */
+.user-auth a.board-link {
+    background-color: #007bff; /* 다른 색상 적용 예시 */
+    border-color: #007bff;
+}
+
+.user-auth a.board-link:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+/* 추가 스타일 (필요에 따라) */ 

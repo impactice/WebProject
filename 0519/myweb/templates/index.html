@@ -18,7 +18,7 @@
             {% if current_user.is_authenticated %}
             <span>{{ current_user.username }}</span>
             <a href="{{ url_for('logout') }}">로그아웃</a>
-            {% else %}
+            <a href="{{ url_for('board') }}">문의 게시판</a>  {% else %}
             <a href="{{ url_for('login') }}">로그인</a>
             <a href="{{ url_for('register') }}">회원 가입</a>
             {% endif %}
