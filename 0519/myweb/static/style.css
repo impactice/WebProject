@@ -58,6 +58,7 @@ a:hover {
 /* 메인 콘텐츠 영역 */
 .main-content-wrapper {
     display: flex;
+    align-items: flex-start; /* 추가 */
     width: 100%;
     max-width: 1200px;
     margin: 20px auto;
@@ -65,21 +66,22 @@ a:hover {
 }
 
 .left-space {
-    flex: 0 0 250px;
+    flex: 0 0 25%; /* 추가 */
     padding: 20px;
     background-color: #1c1f2a;
     border-radius: 5px;
 }
 
 .image-slider-container {
-    flex: 1;
+    flex: 1; /* 추가 */
+    max-width: 600px; /* 추가 */
     background-color: #1c1f2a;
     border-radius: 5px;
     overflow: hidden;
 }
 
 .right-space {
-    flex: 0 0 250px;
+    flex: 0 0 25%; /* 추가 */
     padding: 20px;
     background-color: #1c1f2a;
     border-radius: 5px;
