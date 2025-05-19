@@ -175,3 +175,12 @@ pip show Flask-Login
 
 <test> readme수정 <test>
 
+## ai api 
+- 안 깔면
+![image](https://github.com/user-attachments/assets/1ffa21f2-b9e7-46df-9a56-9cba1d3299f7)
+```
+pip install google-generativeai
+```
+- 다운 받는 것이 길이가 너무 길어서 임의로 짤랐음
+![image](https://github.com/user-attachments/assets/c68f2a04-b015-4108-b21f-85d7c4eb09b3)
+
