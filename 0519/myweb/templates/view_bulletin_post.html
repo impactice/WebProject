@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='bulletin_board.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ post.title }}</h1>
+        <p>작성일: {{ post.date_posted.strftime('%Y-%m-%d %H:%M') }}</p>
+        <div class="content">
+            {{ post.content }}
+        </div>
+        <a href="{{ url_for('bulletin_board') }}">게시판으로 돌아가기</a>
+    </div>
+</body>
+</html>
