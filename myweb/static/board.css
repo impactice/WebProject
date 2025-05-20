@@ -1,0 +1,79 @@
+.board-header {
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    align-items: center;
+    position: relative;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+    background-color: #e9ecef;
+}
+
+.logo-link {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-img {
+    height: 40px;
+    cursor: pointer;
+}
+
+.board-header h1 {
+    margin: 0 auto;
+    font-size: 28px;
+    color: #007bff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.post-list {
+    padding: 20px 40px;
+}
+
+.post-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.post-title {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 10px;
+}
+
+.post-actions a {
+    margin-left: 10px;
+    color: #dc3545;
+    text-decoration: none;
+}
+
+.post-actions a:hover {
+    text-decoration: underline;
+}
