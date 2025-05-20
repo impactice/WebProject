@@ -1,0 +1,206 @@
+/* 기본 스타일 초기화 */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #171a21;
+    color: #c7d5e0;
+    line-height: 1.6;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 헤더 스타일 */
+.main-header {
+    background-color: #1b2838;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* 로고와 사용자 인증 영역 분리 */
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.user-auth {
+    display: flex;
+    align-items: center;
+}
+
+.user-auth a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.user-auth a:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* 메인 콘텐츠 영역 */
+.main-content-wrapper {
+    display: flex;
+    align-items: flex-start; /* 추가 */
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.left-space {
+    flex: 0 0 25%; /* 추가 */
+    padding: 20px;
+    background-color: #1c1f2a;
+    border-radius: 5px;
+}
+
+.image-slider-container {
+    flex: 1; /* 추가 */
+    max-width: 600px; /* 추가 */
+    background-color: #1c1f2a;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.right-space {
+    flex: 0 0 25%; /* 추가 */
+    padding: 20px;
+    background-color: #1c1f2a;
+    border-radius: 5px;
+}
+
+/* 게시판 미리보기 */
+.board-preview h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #66c0f4;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.board-preview ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.board-preview li {
+    padding: 5px 0;
+    border-bottom: 1px solid #2a475e;
+}
+
+.board-preview li a {
+    color: #66c0f4;
+}
+
+/* 건물 목록 */
+.building-list h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #66c0f4;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.building-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.building-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #2a475e;
+}
+
+.building-list li a {
+    color: #66c0f4;
+}
+
+/* 추가: 문의 게시판 링크 스타일 (기존 링크와 동일하게) */
+.user-auth a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.user-auth a:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* 또는, 약간 다른 스타일을 적용하려면: */
+.user-auth a.board-link {
+    background-color: #007bff; /* 다른 색상 적용 예시 */
+    border-color: #007bff;
+}
+
+.user-auth a.board-link:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Gemini 검색 영역 스타일 (맨 아래에 배치) */
+.gemini-search-container {
+    background-color: #1c1f2a;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px; /* 상단과의 간격 */
+    margin-bottom: 20px; /* 하단과의 간격 (필요한 경우) */
+}
+
+.gemini-search-container h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #66c0f4;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.gemini-search-container input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #2a475e;
+    background-color: #232732;
+    color: #c7d5e0;
+    border-radius: 5px;
+}
+
+.gemini-search-container button {
+    padding: 10px 15px;
+    background-color: #66c0f4;
+    color: #171a21;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gemini-search-container button:hover {
+    background-color: #55a6d0;
+}
+
+#gemini-result {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #232732;
+    color: #c7d5e0;
+    border-radius: 5px;
+}
+/* 추가 스타일 (필요에 따라) */ 
