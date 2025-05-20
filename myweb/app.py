@@ -16,7 +16,7 @@ login_manager.init_app(app)
 login_manager.login_view = 'login'
 
 # Gemini API 키 설정 (안전하게 관리해야 함!)
-GENAI_API_KEY = ""  # 실제 API 키로 대체
+GENAI_API_KEY = "AIzaSyBK1CPlrVCCXfjxFuMt_F2h0zW1embq3Ws"  # 실제 API 키로 대체
 genai.configure(api_key=GENAI_API_KEY)
 
 # Gemini 모델 설정 (원하는 모델 선택)
