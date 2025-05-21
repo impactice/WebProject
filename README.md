@@ -61,9 +61,9 @@ python -m flask --version
 - 이는 pip가 설치되어 있지 않거나, 시스템 환경 변수(PATH)에 등록되지 않았기 때문이다
 
 - 명령 프롬프트에서 다음 명령어 입력: 
-```
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-```
+    ```
+    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    ```
 ![image](https://github.com/user-attachments/assets/e91ec098-96ce-47de-b51a-86bfa38de6b0)
 ```
 python get-pip.py
@@ -565,7 +565,7 @@ def edit_post(post_id):
 def delete_post(post_id):
     post = Post.query.get_or_40
 ```
-- 이거는 app.py 주석을 단 버
+- 이거는 app.py 주석을 단 버전
 ```
 import os # 운영 체제와 상호작용하기 위한 모듈 (예: 환경 변수 접근)
 from flask import Flask, render_template, request, redirect, url_for, jsonify, session # Flask 웹 프레임워크의 핵심 기능들 임포트
