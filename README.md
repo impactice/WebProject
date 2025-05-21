@@ -184,7 +184,7 @@ pip install google-generativeai
 - 다운 받는 것이 길이가 너무 길어서 임의로 짤랐음
 ![image](https://github.com/user-attachments/assets/c68f2a04-b015-4108-b21f-85d7c4eb09b3)
 
-
+```
 myweb/
 ├── app.py
 ├── .env
@@ -215,4 +215,18 @@ myweb/
 │   ├── style.css
 │   └── view.css
 └── instance/          # 데이터베이스 파일 (database.db)
-    └── database.db
+    └── database.db 
+```
+    pip 패키지는 다음과 같습니다:
+
+- Flask
+- Flask-SQLAlchemy
+- Werkzeug (보안 관련 기능: generate_password_hash, check_password_hash) - Flask 설치 시 함께 설치될 가능성이 높습니다.
+- Flask-Login
+- google-generativeai
+- Authlib
+- python-dotenv
+따라서 다음 명령어로 필요한 패키지들을 설치할 수 있습니다:
+```
+pip install Flask Flask-SQLAlchemy Flask-Login google-generativeai Authlib python-dotenv
+```
