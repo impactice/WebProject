@@ -184,3 +184,35 @@ pip install google-generativeai
 - 다운 받는 것이 길이가 너무 길어서 임의로 짤랐음
 ![image](https://github.com/user-attachments/assets/c68f2a04-b015-4108-b21f-85d7c4eb09b3)
 
+
+myweb/
+├── app.py
+├── .env
+├── templates/
+│   ├── index.html
+│   ├── bulletin_board.html
+│   ├── edit_post.html
+│   ├── login.html
+│   ├── new_bulletin_post.html
+│   ├── new_post.html
+│   ├── register.html
+│   ├── view.html
+│   ├── view_bulletin_post.html
+│   ├── building/
+│   │   ├── B01.html
+│   │   ├── B26.html
+│   │   └── B27.html
+│   └── board.html
+├── static/            # 정적 파일
+│   ├── buildingC/
+│   │   └── B01.css
+│   ├── images/
+│   │   └── ...
+│   ├── board.css
+│   ├── bulletin_board.css
+│   ├── image_slider.css
+│   ├── image_slider.js
+│   ├── style.css
+│   └── view.css
+└── instance/          # 데이터베이스 파일 (database.db)
+    └── database.db
